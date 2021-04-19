@@ -1,0 +1,20 @@
+﻿@page
+@model Zad5AddingService.Pages.FromDBModel
+@{
+}
+
+<div class="card-columns">
+    @foreach (var product in Model.Products)
+    {
+        <div class="card">
+            <div class="card-img">
+                <h5>@product.Id</h5>
+                <h5>@product.Maker</h5>
+                <h5>@product.Image</h5>
+                <h5>@product.Url</h5>
+                <h5>@product.Title</h5>
+                <h5>@product.Description</h5>
+            </div>
+        </div>
+    }
+</div>
